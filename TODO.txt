@@ -1,0 +1,22 @@
+wrapping
+    entire module
+        what if it contains classes also?
+    entire class
+    import inspect
+    
+
+deferred receives _Callable, call previous callbacks anyway?
+
+subclass _Callable to _Symbol
+    assignment to Symbol
+    
+    how to deal with getattr? cases...
+        X.groupby([...]) ---- (X) => getattr(X, 'groupby')([...])
+
+        X.a ---- (X) => getattr(X, 'a')
+
+        the problem is that you don't know if groupby should be called, or
+        if a should be callable
+    
+
+test on DataFrame
