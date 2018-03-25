@@ -18,5 +18,14 @@ subclass _Callable to _Symbol
         the problem is that you don't know if groupby should be called, or
         if a should be callable
     
+    Calling a symbol may need to act on..
+        A tuple of (f, left, right), where all are functions
+        A Symbol (alternatively could change Symbol.__call__ to never allow a symbol)
+        A function object, F
+
+        A big theme seems to be encoding vs decoding object calls
+
+        f(left, right) could be any combination of symbol, deferred, F, function
+    
 
 test on DataFrame
